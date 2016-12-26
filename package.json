@@ -23,7 +23,7 @@
     "events": "*",
     "i18next-client": "1.7.7",
     "jQuery-Impromptu": "trentrichardson/jQuery-Impromptu#v6.0.0",
-    "jquery": "~2.1.1",
+    "jquery": "~3.0.0",
     "jquery-contextmenu": "*",
     "jquery-ui": "1.10.5",
     "jssha": "1.5.0",
