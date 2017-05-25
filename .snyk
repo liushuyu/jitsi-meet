@@ -1,0 +1,56 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ms:20170412':
+    - '@atlassian/aui > mocha > debug > ms':
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > connect-timeout > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > express-session > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > finalhandler > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > morgan > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > serve-index > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - '@atlassian/aui > gulp-webserver > serve-index > debug > ms':
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > body-parser > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > compression > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > connect-timeout > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > serve-static > send > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > serve-static > send > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - lib-jitsi-meet > socket.io-client > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - lib-jitsi-meet > socket.io-client > engine.io-client > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - lib-jitsi-meet > socket.io-client > socket.io-parser > debug > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - '@atlassian/aui > karma > socket.io > socket.io-parser > debug > ms':
+        patched: '2017-05-25T00:15:33.946Z'
+    - '@atlassian/aui > karma > socket.io > socket.io-adapter > socket.io-parser > debug > ms':
+        patched: '2017-05-25T00:15:33.946Z'
+    - '@atlassian/aui > karma > socket.io > socket.io-client > socket.io-parser > debug > ms':
+        patched: '2017-05-25T00:15:33.946Z'
+    - react-native > connect > serve-favicon > ms:
+        patched: '2017-05-25T00:15:33.946Z'
+    - '@atlassian/aui > karma > socket.io > debug > ms':
+        patched: '2017-05-25T00:15:33.946Z'
+    - '@atlassian/aui > karma > socket.io > engine.io > debug > ms':
+        patched: '2017-05-25T00:15:33.946Z'
+    - '@atlassian/aui > karma > socket.io > socket.io-adapter > debug > ms':
+        patched: '2017-05-25T00:15:33.946Z'
+    - '@atlassian/aui > karma > socket.io > socket.io-client > debug > ms':
+        patched: '2017-05-25T00:15:33.946Z'
+    - '@atlassian/aui > karma > socket.io > socket.io-client > engine.io-client > debug > ms':
+        patched: '2017-05-25T00:15:33.946Z'
