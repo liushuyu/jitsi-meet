@@ -42,7 +42,8 @@
     "strophejs-plugins": "^0.0.6",
     "toastr": "^2.0.3",
     "url-polyfill": "github/url-polyfill",
-    "xmldom": "^0.1.22"
+    "xmldom": "^0.1.22",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "babel-core": "*",
@@ -68,7 +69,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "lint": "jshint . && eslint .",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "pre-commit": [
     "lint"
@@ -81,5 +84,6 @@
     "strophe-disco": "./node_modules/strophejs-plugins/disco/strophe.disco.js",
     "strophe-caps": "./node_modules/strophejs-plugins/caps/strophe.caps.jsonly.js",
     "tooltip": "./node_modules/bootstrap/js/tooltip.js"
-  }
+  },
+  "snyk": true
 }
