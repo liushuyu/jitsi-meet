@@ -55,7 +55,7 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-i18next": "4.8.0",
-    "react-native": "0.51.0",
+    "react-native": "0.56.0",
     "react-native-background-timer": "2.0.0",
     "react-native-calendar-events": "1.4.3",
     "react-native-callstats": "3.27.0",
@@ -76,7 +76,8 @@
     "styled-components": "1.4.6",
     "url-polyfill": "github:github/url-polyfill#39734186de44612bc5a16eb25f5407adcc5b2e7c",
     "uuid": "3.1.0",
-    "xmldom": "0.1.27"
+    "xmldom": "0.1.27",
+    "snyk": "^1.88.1"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
@@ -114,7 +115,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint . && flow",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "pre-commit": [
     "lint"
@@ -122,5 +125,6 @@
   "browser": {
     "autosize": "./node_modules/autosize/build/jquery.autosize.js",
     "jQuery-Impromptu": "jQuery-Impromptu/src/jquery-impromptu.js"
-  }
+  },
+  "snyk": true
 }
