@@ -55,7 +55,7 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-i18next": "4.8.0",
-    "react-native": "0.51.0",
+    "react-native": "0.60.0",
     "react-native-background-timer": "2.0.0",
     "react-native-calendar-events": "1.4.3",
     "react-native-callstats": "3.27.0",
