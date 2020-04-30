@@ -41,7 +41,7 @@
     "i18next-xhr-backend": "1.4.2",
     "jQuery-Impromptu": "github:trentrichardson/jQuery-Impromptu#v6.0.0",
     "jitsi-meet-logger": "github:jitsi/jitsi-meet-logger#6fff754a77a56ab52499f3559105a15886942a1e",
-    "jquery": "3.3.1",
+    "jquery": "3.5.0",
     "jquery-contextmenu": "2.4.5",
     "jquery-i18next": "1.2.0",
     "js-md5": "0.6.1",
@@ -76,7 +76,8 @@
     "styled-components": "1.4.6",
     "url-polyfill": "github:github/url-polyfill#39734186de44612bc5a16eb25f5407adcc5b2e7c",
     "uuid": "3.1.0",
-    "xmldom": "0.1.27"
+    "xmldom": "0.1.27",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
@@ -114,7 +115,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint . && flow",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "pre-commit": [
     "lint"
@@ -122,5 +125,6 @@
   "browser": {
     "autosize": "./node_modules/autosize/build/jquery.autosize.js",
     "jQuery-Impromptu": "jQuery-Impromptu/src/jquery-impromptu.js"
-  }
+  },
+  "snyk": true
 }
